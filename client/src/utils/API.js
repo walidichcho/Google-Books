@@ -9,7 +9,7 @@ export default {
     return axios.get(BaseUrl + query);
   },
   // Gets the book save in db
-  getBook: function () {
+  getBooks: function () {
     return axios.get("/api/books/");
   },
   // Deletes the book with the given id
