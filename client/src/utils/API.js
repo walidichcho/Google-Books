@@ -1,5 +1,5 @@
 import axios from "axios";
-import { query } from "mongoose";
+
 
 const BaseUrl = "https://www.googleapis.com/books/v1/volumes?q="
 
@@ -17,7 +17,8 @@ export default {
     return axios.delete("/api/books/" + id);
   },
   // Saves a book to the database
-  saveBook: function (savedBooks) {
-    return axios.post("/api/books", savedBooks);
+  saveBook: function (bookData) {
+    return axios.post("/api/books", bookData).then(result => result.data);
+
   }
 };
