@@ -54,11 +54,13 @@ class SearchBooks extends Component {
   }
 
   handleSavedButton = event => {
-    // console.log(event)
+    console.log(event)
     event.preventDefault();
     console.log(this.state.books)
     let savedBooks = this.state.books.filter(book => book.id === event.target.id)
-    savedBooks = savedBooks[0];
+    // savedBooks = savedBooks[0];
+    // savedBooks.author = savedbooks[0].author;
+    console.log('saved books', savedBooks)
     API.saveBook(savedBooks)
       .then(this.setState({ message: alert("Your book is saved") }))
       .catch(err => console.log(err))
@@ -86,8 +88,6 @@ class SearchBooks extends Component {
       </Container>
     )
   }
-
-
 }
 
 export default SearchBooks
