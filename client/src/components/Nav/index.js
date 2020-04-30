@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css"
 
+// this Nav bar component that shows two buttons
 function Nav() {
   return (
     <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
