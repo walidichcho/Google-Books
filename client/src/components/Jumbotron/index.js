@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css"
-
+// this is a jumbotron for the web
 function Jumbotron() {
   return (
     <div className="jumbotron">
