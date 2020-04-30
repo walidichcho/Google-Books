@@ -34,7 +34,7 @@ class SearchBooks extends Component {
           let results = res.data.items
           //map through the array 
           results = results.map(result => {
-            //store each book information in a new object 
+            //  store each book in object using this module
             result = {
               key: result.id,
               id: result.id,

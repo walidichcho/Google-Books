@@ -14,7 +14,7 @@ class SaveBook extends Component {
       .then(res => this.setState({ savedBooks: res.data }))
       .catch(err => console.log(err))
   }
-  //function to remove book by id
+  //  function that remove a book by its ID
   handleDeleteButton = id => {
     API.deleteBook(id)
       .then(res => this.componentDidMount())
