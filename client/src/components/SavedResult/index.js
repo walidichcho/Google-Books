@@ -1,4 +1,5 @@
 // import React from "./node_modules/react";
+// and save all result in this component with picture of the books
 import React from "react";
 import "./style.css"
 import { Row, Col } from "../Grid"
