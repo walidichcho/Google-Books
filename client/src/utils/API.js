@@ -1,7 +1,8 @@
 import axios from "axios";
 
 
-const BaseUrl = "https://www.googleapis.com/books/v1/volumes?q="
+const BaseUrl = "https://restcountries.eu/rest/v2/all"
+
 
 export default {
   // Gets all books
