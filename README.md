@@ -1,6 +1,6 @@
  
  
-## Google Books Search
+## Google Books Search/Full Stack Web
 
 A React-based Google Books Search application.
 
